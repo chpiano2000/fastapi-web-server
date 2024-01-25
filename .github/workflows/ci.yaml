@@ -2,7 +2,7 @@ on:
   push:
     branches:
     - staging
-    - main
+    - production
 env:
   NAMESPACE: "vochidat0"
 
