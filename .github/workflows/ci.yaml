@@ -39,7 +39,7 @@ jobs:
           REPO_NAME=${{ github.repository }}
           REPOSITORY=${REPO_NAME#*/}
           IMAGE_NAME=${{ env.NAMESPACE }}/${REPOSITORY}
-          TAG=${ENVIRONMENT}-${GITHUB_SHA}
+          TAG=${ENVIRONMENT}-${COMMIT_HASH}
           echo "TAG=`echo ${TAG}`" >> $GITHUB_ENV
           echo "IMAGE_NAME=`echo ${IMAGE_NAME}`" >> $GITHUB_ENV
 
